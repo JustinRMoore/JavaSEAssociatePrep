@@ -32,7 +32,10 @@ public class Efficiency {
 			increment = increment +199999999;
 
 			
-			count = count + (increment-199999999);	
+			increment = increment + count/(i+1);
+			increment = increment/increment;
+			
+			count = count + increment;	
 			
 				if (count>2147483646 ){
 					System.out.println("Count wrapping");
