@@ -4,7 +4,6 @@ public class Efficiency {
 
 	public static void main(String[] args) {
 
-		
 		int n = 90000;
 		int count = 0;
 		long startTime = 0L;
@@ -13,9 +12,7 @@ public class Efficiency {
 	for (int z =0;z<6;z++){	
 		
 		startTime = System.currentTimeMillis();	
-		
-		
-		
+
 		int j =0;
 		for (int i =0;i<n;i++){
 						
@@ -25,7 +22,7 @@ public class Efficiency {
 			
 			increment = increment + ((j+3)/(j+3)+(i+1)/(i+1));
 			increment = increment/increment;
-			increment = increment +199999999;
+			increment = increment +19999999;
 			increment = increment + count/(i+1);
 			increment = increment/increment;
 			
@@ -40,7 +37,7 @@ public class Efficiency {
 
 		endTime = System.currentTimeMillis();
 
-		System.out.println(endTime-startTime + " millS have passed");
+		System.out.println(endTime-startTime + " ms have passed");
 		System.out.println("count :"+count);
 		System.out.println();
 		count=0;
