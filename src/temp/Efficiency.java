@@ -24,14 +24,8 @@ public class Efficiency {
 			int increment =0;
 			
 			increment = increment + ((j+3)/(j+3)+(i+1)/(i+1));
-			
-			
 			increment = increment/increment;
-			
-			
 			increment = increment +199999999;
-
-			
 			increment = increment + count/(i+1);
 			increment = increment/increment;
 			
@@ -43,14 +37,12 @@ public class Efficiency {
 			
 			}
 		}
-		
 
 		endTime = System.currentTimeMillis();
 
 		System.out.println(endTime-startTime + " millS have passed");
 		System.out.println("count :"+count);
 		System.out.println();
-		
 		count=0;
 	}
   }
