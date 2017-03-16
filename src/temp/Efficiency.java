@@ -25,9 +25,14 @@ public class Efficiency {
 			
 			increment = increment + ((j+3)/(j+3)+(i+1)/(i+1));
 			
+			
 			increment = increment/increment;
 			
-			count = count + increment;	
+			
+			increment = increment +199999999;
+
+			
+			count = count + (increment-199999999);	
 			
 				if (count>2147483646 ){
 					System.out.println("Count wrapping");
